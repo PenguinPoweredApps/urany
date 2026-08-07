@@ -9,7 +9,7 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 
 	// Import the generated pb package
-	pb "github.com/PenguinPoweredApps/urany/proto/pb"
+	pb "github.com/PenguinPoweredApps/unary/proto"
 )
 
 func main() {

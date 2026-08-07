@@ -8,7 +8,7 @@ import (
 	"google.golang.org/grpc"
 
 	// Import the generated pb package
-	pb "github.com/PenguinPoweredApps/urany/proto/pb"
+	pb "github.com/PenguinPoweredApps/unary/proto"
 )
 
 // server is used to implement helloworld.GreeterServer.

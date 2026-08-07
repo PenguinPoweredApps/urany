@@ -2,7 +2,7 @@
 PROTO_FILE := ./proto/hello.proto
 SERVER_DIR := ./server
 CLIENT_DIR := ./client
-BIN_DIR := ./bin
+BIN_DIR := bin
 
 # Tell Make that these aren't actual files
 .PHONY: all proto server client clean tidy
@@ -25,13 +25,13 @@ proto:
 # 3. Build the server binary
 server:
 	@echo "Building server..."
-	mkdir -p $(BIN_DIR)
+	mkdir $(BIN_DIR)
 	go build -o $(BIN_DIR)/server $(SERVER_DIR)
 
 # 4. Build the client binary
 client:
 	@echo "Building client..."
-	mkdir -p $(BIN_DIR)
+	mkdir $(BIN_DIR)
 	go build -o $(BIN_DIR)/client $(CLIENT_DIR)
 
 # 5. Clean up build artifacts
